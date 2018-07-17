@@ -32,6 +32,7 @@ The automotive (OEM) supply chain relies upon efficient OEM management of their 
 ```
 sudo ./start_docker.sh
 ```
+3. Consult `VIBES.postman_collection` for API usage details
 
 # Ports
 * VIBES Rest API exposed from port 3010
