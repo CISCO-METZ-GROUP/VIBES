@@ -1,0 +1,497 @@
+{
+	"variables": [],
+	"info": {
+		"name": "VIBES copy",
+		"_postman_id": "bf5de8ba-e71d-6283-59eb-f5c7b21e75fe",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-contract",
+			"request": {
+				"url": "localhost:3010/create-contract",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Subscribe",
+			"request": {
+				"url": "localhost:3010/subscribe",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addOEMVerdict",
+			"request": {
+				"url": "localhost:3010/addOEMVerdict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "index",
+							"value": "0",
+							"description": "design number (will change to design name)",
+							"type": "text"
+						},
+						{
+							"key": "verdict",
+							"value": "\"yes\"",
+							"description": "verdict",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getVerdict",
+			"request": {
+				"url": "localhost:3010/getVerdict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "data3.3",
+							"description": "design name",
+							"type": "text"
+						},
+						{
+							"key": "verdictNo",
+							"value": "0",
+							"description": "keep 0 for now",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addVerdict",
+			"request": {
+				"url": "localhost:3010/addVerdict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "data3.3",
+							"description": "design number (will change to design name)",
+							"type": "text"
+						},
+						{
+							"key": "verdict",
+							"value": "yes",
+							"description": "verdict ",
+							"type": "text"
+						},
+						{
+							"key": "T1Name",
+							"value": "T1Name",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getOEMVerdict",
+			"request": {
+				"url": "localhost:3010/getOEMVerdict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "index",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "verdictNo",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getBlocks",
+			"request": {
+				"url": "localhost:3010/getBlocks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "index",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "verdictNo",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "03e753bb-eab5-4323-9357-f4c74a389190",
+					"name": "getBlocks",
+					"originalRequest": {
+						"url": "10.195.77.167:3010/getBlocks",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "index",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "verdictNo",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "0xdaC4ABf017Ae3fb0baE6559196c732B77bD8DC97",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "0x50Bb2Cb8987d249730A2c7b10265dC1815FBDd5F",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "0x53404e993F9A42f688a4713351CB47D5fa9B4D8a",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "0xDfD9854191f13631753670f985a816cA833aE3F6",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "address",
+									"value": "0xc5dE27C74d7146E7abECD013658bfB42c33F93e0",
+									"description": "contract address",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "html",
+					"header": [
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "1725",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Thu, 07 Jun 2018 16:15:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "etag",
+							"key": "etag",
+							"value": "W/\"6bd-HaPPdR0W4E9vML4wH5u30b2EP7E\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"Block\":{\"BlockNumber\":372,\"event\":\"newTopology\",\"time_stamp\":1528387395,\"size\":5429,\"nonce\":\"0x0000000000000000\",\"Transactions\":[\"0xea1952a5084c1d877e9a4aafe867aaac5dd418b23c5435890d6263b5763bf121\"],\"miner\":\"0x0000000000000000000000000000000000000000\",\"current_block_hash\":\"0x25b5582f75e20e910457a36999ed3cf00f41a4e2504b9f1cab3e116433889c63\"}},{\"Block\":{\"BlockNumber\":382,\"event\":\"newTopology\",\"time_stamp\":1528387545,\"size\":4245,\"nonce\":\"0x0000000000000000\",\"Transactions\":[\"0x9deb735c4ce99fc664a13931658baa600d36ca2a83352e40c4643af6e53a371a\"],\"miner\":\"0x0000000000000000000000000000000000000000\",\"current_block_hash\":\"0xf88afbf97858d5255b22cd5d9ccf8998f0def99744e47dbe2bfdbae88657b6cc\"}},{\"Block\":{\"BlockNumber\":397,\"event\":\"newVerdict\",\"time_stamp\":1528387770,\"size\":785,\"nonce\":\"0x0000000000000000\",\"Transactions\":[\"0x00765f916df9faa518ab19cc4e0845e000458f5d96470acb8cb48898a986ded2\"],\"miner\":\"0x0000000000000000000000000000000000000000\",\"current_block_hash\":\"0x2686c6f7a967d1b3d0b0cba36d8196c3d5d8de0f5b0025f65e6c83decc4bb72b\"}},{\"Block\":{\"BlockNumber\":399,\"event\":\"newVerdict\",\"time_stamp\":1528387800,\"size\":785,\"nonce\":\"0x0000000000000000\",\"Transactions\":[\"0xd9cb4ad43743927d484f7a384cf2db9da062f1f8a88b3ba266ced5ee45aa9adb\"],\"miner\":\"0x0000000000000000000000000000000000000000\",\"current_block_hash\":\"0x1280af8a4e4c31570cbd2310d623d1668a4b43aa260aeee6e05140f0c54cd027\"}},{\"Block\":{\"BlockNumber\":403,\"event\":\"newVerdict\",\"time_stamp\":1528387860,\"size\":785,\"nonce\":\"0x0000000000000000\",\"Transactions\":[\"0xb579a5baa7bd9f7ca63c2d035cd0179e8265e7c6ddcb2ff1a0391e15627f0591\"],\"miner\":\"0x0000000000000000000000000000000000000000\",\"current_block_hash\":\"0xedcf45e2822950fb38602f888d40a72c3e4f20e8969f32c4f794b7b3a579e29f\"}}]"
+				}
+			]
+		},
+		{
+			"name": "getTimeStampAndDName",
+			"request": {
+				"url": "localhost:3010/getTimeStampAndDName",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getSelectedBlock",
+			"request": {
+				"url": "localhost:3010/getSelectedBlock",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "numberOfBlock",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "blockNumber",
+							"value": "200",
+							"description": "block number",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "subscribeVerdict",
+			"request": {
+				"url": "localhost:3010/subscribeVerdict",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "addVnetDesign",
+			"request": {
+				"url": "localhost:3010/addVnetDesign",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "topo",
+							"value": "[\n    {\n        'srcMAC': '02:00:00:00:00:20',\n        'Messages': [\n            {\n                'signals': [\n                    {\n\t\t    \t'signalID': 0,\n\t\t\t'signalName': 'SomeSignal',\n\t\t    \t'destMAC': '01:00:00:00:00:00',\n                        'destIP': '239.0.0.0',\n                    }\n                ],\n                'messageName': 'SomeMessage',\n                'srcPort': 20000,\n                'destPort': 30000,\n                'messageID': 0\n            }\n        ],\n        'srcIP': '10.0.0.0',\n        'ECUName': 'SomeECU'\n    }\n  ]",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "data3.3",
+							"type": "text"
+						},
+						{
+							"key": "cname",
+							"value": "OEMname",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getAllEvents",
+			"request": {
+				"url": "localhost:3010/getAllEvents",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getBusniesslogs",
+			"request": {
+				"url": "localhost:3010/getBuisnessLogs",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getVnetDesign",
+			"request": {
+				"url": "localhost:3010/getVnetDesign",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "index",
+							"value": "",
+							"description": "design number will change to design name",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "data3.3",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
