@@ -2,7 +2,7 @@
 Vehicular network designs In a Blockchain - Ethereum Solution
 
 # Team
-+ Noha Gazzaz
++ Noha Gazzaz (Lead Software Engineer) noha.gazzaz@gmail.com
 + Rohan Dhesikan
 + Abeer Khalid A Alshubat
 + Aishah Mohammed Najeeb Y Ayoub
